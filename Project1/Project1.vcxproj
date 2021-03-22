@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BetweenAdder.cpp" />
     <ClCompile Include="hello_world.cpp" />
     <ClCompile Include="SimpleAdder.cpp" />
   </ItemGroup>
