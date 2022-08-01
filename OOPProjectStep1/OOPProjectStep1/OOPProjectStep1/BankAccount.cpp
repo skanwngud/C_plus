@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(void)
+int main_2(void)
 {
 	int SelectMenu;
 	int AccountNum;
