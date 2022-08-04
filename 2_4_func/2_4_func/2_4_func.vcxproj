@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D49D9270-A9FC-41DE-BA51-7899614A98FA}</ProjectGuid>
-    <RootNamespace>My23reference</RootNamespace>
+    <ProjectGuid>{EC6FA3E3-CCCC-40FD-98B4-BA8C51B62E34}</ProjectGuid>
+    <RootNamespace>My24func</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -124,10 +124,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Question.cpp" />
-    <ClCompile Include="RefArrElem.cpp" />
-    <ClCompile Include="Referen.cpp" />
-    <ClCompile Include="RefPtr.cpp" />
-    <ClCompile Include="RefSwap.cpp" />
+    <ClCompile Include="RefReturnOne.cpp" />
+    <ClCompile Include="RefReturnThree.cpp" />
+    <ClCompile Include="RefReturnTwo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
