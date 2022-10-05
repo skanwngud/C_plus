@@ -10,7 +10,7 @@ using namespace std;
 #define ACC_STEP 10
 #define BRK_STEP 10
 
-struct Car
+struct Car1
 {
 	char gamerID[ID_LEN];
 	int fuelGauge;
@@ -53,7 +53,7 @@ struct Car
 
 int main3(void)
 {
-	Car run99 = { "run99", 100, 0 };  // 구조체의 선언
+	Car1 run99 = { "run99", 100, 0 };  // 구조체의 선언
 
 	run99.Accel();  // 구조체 내부의 함수를 호출한다
 	run99.Accel();
@@ -61,7 +61,7 @@ int main3(void)
 	run99.Break();
 	run99.ShowCarState();
 
-	Car sped77 = { "sped77", 100, 0 };
+	Car1 sped77 = { "sped77", 100, 0 };
 	sped77.Accel();
 	sped77.Break();
 	sped77.ShowCarState();

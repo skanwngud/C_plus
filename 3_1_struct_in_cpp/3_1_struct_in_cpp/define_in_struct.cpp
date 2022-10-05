@@ -37,7 +37,7 @@ void ShowPosition();
 
 // 위의 함수들을 구조체 안에 정의하여 다음의 형태로 main 함수를 구성해야한다.
 
-int main(void)
+int main4(void)
 {
 	Point pos1 = { 12, 4 };
 	Point pos2 = { 20, 30 };
