@@ -22,19 +22,19 @@ namespace CAR_CONST
 
 class Car
 {
-private:
+private:  // 접근제어 지시자가 선언 되면 그 이후에 등장하는 변수나 함수는 해당 범위 내에서 접근이 가능하다
 	char gamerID[CAR_CONST::ID_LEN];
 	int fuelGauge;
 	int curSpeed;
 
-public:
+public:  // 새로운 접근제어 지사자가 선언 되면 그 이후로 등장하는 변수나 함수는 새로운 접근제어 지시자의 범위 내에서 접근이 간으하다
 	void InitMembers(const char *ID, int fuel);
 	void ShowCarState();
 	void Accel();
 	void Break();
 };
 
-void Car::InitMembers(const char *ID, int fuel)
+void Car::InitMembers(const char *ID, int fuel)  // 함수의 정의를 클래스 밖으로 빼도 이는 클래스의 일부이기 때문에 함수 내에서는 private 로 선언 된 변수에 접근이 가능하다
 {
 	strcpy(gamerID, ID);
 	fuelGauge = fuel;
@@ -87,3 +87,6 @@ int main(void)
 
 	return 0;
 }
+
+// struct 를 이용하여 정의한 구조체는 별도의 접근제어 지시자가 없으면 전부 public 으로 선언 된다
+// class 를 이용하여 정의한 구조체는 별도의 접근제어 지시자가 없으면 전부 private 로 선언 된다
