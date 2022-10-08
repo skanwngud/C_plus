@@ -15,7 +15,7 @@ namespace CAR_CONST
 	};
 }  // CAR_CONST 라는 이름공간 안에 Car 에서 사용하는 상수들을 전부 넣었다.
 
-struct Car2
+struct Car
 {
 	char gamerID[CAR_CONST::ID_LEN];  // ID_LEN 에 접근하기 위해서 CAR_CONST 라는 이름공간을 지정함으로써 가독성이 올랐다.
 	int fuelGauage;
@@ -58,14 +58,14 @@ struct Car2
 
 int main5(void)
 {
-	Car2 run99 = { "run99", 100, 0 };
+	Car run99 = { "run99", 100, 0 };
 	run99.Accel();
 	run99.Accel();
 	run99.showCarState();
 	run99.Break();
 	run99.showCarState();
 
-	Car2 sped77 = { "sped77", 100, 0 };
+	Car sped77 = { "sped77", 100, 0 };
 	sped77.Accel();
 	sped77.Break();
 	sped77.showCarState();
