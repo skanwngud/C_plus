@@ -15,7 +15,7 @@ int FruitSeller::SaleApples(int money)
 	if (money < 0)
 	{
 		cout << "판매 중지" << endl;
-		return;
+		return false;
 	}
 	int num = money / APPLE_PRICE;
 	numOfApple -= num;
@@ -24,7 +24,7 @@ int FruitSeller::SaleApples(int money)
 	return num;
 }
 
-void FruitSeller::ShowSalesResult()
+void FruitSeller::ShowSalesResult() const
 {
 	cout << "남은 사과: " << numOfApple << endl;
 	cout << "현재 수익: " << myMoney << endl << endl;
