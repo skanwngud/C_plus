@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{DFC38EF5-9896-404C-905E-177534C3E105}</ProjectGuid>
-    <RootNamespace>definevariableclasses</RootNamespace>
+    <ProjectGuid>{18A3D200-B067-489A-BA54-91CAE8AC9D66}</ProjectGuid>
+    <RootNamespace>definevariableclasses2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,11 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Ring.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Ring.cpp" />
-    <ClCompile Include="Run.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
