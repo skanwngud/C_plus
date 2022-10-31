@@ -27,11 +27,11 @@ void Account::MakeAccount(void)
 	std::cout << "Amount Money: ";
 	std::cin >> balance;
 
-	/*nameLEN = strlen(name) + 1;
+	nameLEN = strlen(name) + 1;
 	cusName = new char[nameLEN];
 	strcpy(cusName, name);
-*/
-	accNum++;
+
+	new Account;
 }
 
 //void Account::DepositMoney(void)

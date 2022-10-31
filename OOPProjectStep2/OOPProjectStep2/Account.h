@@ -8,7 +8,7 @@ private:
 	int balance;
 	int nameLEN;
 	int accNum;  // num of account
-	char cusName;
+	char * cusName;
 
 public:
 	Account() {};
