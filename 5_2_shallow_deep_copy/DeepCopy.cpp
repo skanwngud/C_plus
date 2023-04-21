@@ -16,7 +16,7 @@ class Person
             age = myage;
         }
 
-        Person(const Person& copy) : age(copy.age)
+        Person(const Person& copy) : age(copy.age)  // 복사 생성자를 명시하여 멤버를 복사할 때 포인터 변수를 새로 생성하게끔 함.
         {
             name = new char[strlen(copy.name) + 1];
             strcpy(name, copy.name);
