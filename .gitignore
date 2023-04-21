@@ -362,3 +362,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# vsocde 관련 세팅 제외
+.vscode
+
+.gitignore
