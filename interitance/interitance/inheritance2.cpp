@@ -64,7 +64,7 @@ public:
 
 int main(void)
 {
-	MyFriendDetailInfo myfriend("YooJuHyeong", 30, "Yoning", "010-3712-9410");
+	MyFriendDetailInfo myfriend("HongJo", 32, "Seoul", "010-1234-5678");
 	myfriend.ShowMyFriendDetailInfo();
 
 	return 0;
