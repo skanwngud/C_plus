@@ -63,4 +63,60 @@ void AccountHandler::MakeCreditAccount(void)
     int balance;
     int interRate;
     int creditLevel;
+
+    std::cout << "[Create Credit Account]" << std::endl;
+    std::cout << "Account Name: ";
+    std::cin >> id;
+    std::cout << "Name: ";
+    std::cin >> name;
+    std::cout << "Deposit: ";
+    std::cin >> balance;
+    std::cout << "Rate: ";
+    std::cin >> interRate;
+    std::cout << "Credit Level(1toA, 2toB, 3toC): ";
+    std::cin >> creditLevel;
+    std::cout << std::endl;
+
+    switch (creditLevel)
+    {
+    case 1:
+        accArr[accNum++] = new HighCreditAccount(id, balance, name, interRate, LEVEL_A);
+        break;
+    case 2:
+        accArr[accNum++] = new HighCreditAccount(id, balance, name, interRate, LEVEL_B);
+        break;
+    case 3:
+        accArr[accNum++] = new HighCreditAccount(id, balance, name, interRate, LEVEL_C);
+        break;
+    }
+}
+
+void AccountHandler::DepositMoney(void)
+{
+    int money;
+    int id;
+    std::cout << "[Deposit]" << std::endl;
+    std::cout << "Account Name: ";
+    std::cin >> id;
+    std::cout << "Deposit: ";
+    std::cin >> money;
+
+    for (int i = 0; i < accNum; i++)
+    {
+        if (accArr[i]->GetAccID()==id)
+        {
+            accArr[i]->Deposit(money);
+            std::cout << "Deposit Complete" << std::endl;
+            return;
+        }
+    }
+
+    std::cout << "The ID is Not Impleted" << std::endl;
+}
+
+void AccountHandler::WithdrawMoney(void)
+{
+    int money;
+    int id;
+    std::cout << "[Withdraw]" << std::endl;
 }
