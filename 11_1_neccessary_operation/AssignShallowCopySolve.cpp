@@ -1,4 +1,4 @@
-// µğÆúÆ® ´ëÀÔ ¿¬»êÀÚÀÇ ÇØ°á
+// ë””í´íŠ¸ ëŒ€ì… ì—°ì‚°ìì˜ í•´ê²°
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
@@ -27,7 +27,7 @@ public:
 
 	Person& operator=(const Person& ref)
 	{
-		delete[]name;  // ¸Ş¸ğ¸® ´©¼ö¸¦ ¸·±â À§ÇØ ¼±¾ğ µÇ¾ú´ø ±âÁ¸ name ÀÇ ¸Ş¸ğ¸®¸¦ ÇØÁ¦½ÃÅ²´Ù.
+		delete[]name;  // ë©”ëª¨ë¦¬ ëˆ„ìˆ˜ë¥¼ ë§‰ê¸° ìœ„í•´ ì„ ì–¸ ë˜ì—ˆë˜ ê¸°ì¡´ name ì˜ ë©”ëª¨ë¦¬ë¥¼ í•´ì œì‹œí‚¨ë‹¤.
 		int len = strlen(ref.name) + 1;
 		name = new char[len];
 		strcpy(name, ref.name);

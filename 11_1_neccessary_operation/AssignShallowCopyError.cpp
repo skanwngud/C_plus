@@ -1,4 +1,4 @@
-// µðÆúÆ® ´ëÀÔ ¿¬»êÀÚÀÇ ¹®Á¦Á¡
+// ë””í´íŠ¸ ëŒ€ìž… ì—°ì‚°ìžì˜ ë¬¸ì œì 
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
@@ -37,7 +37,7 @@ int main(void)
 	Person man1("MAN1 NAME", 29);
 	Person man2("MAN2 NAME", 22);
 	
-	man2 = man1;  // ¾èÀº º¹»ç¸¦ ¼öÇàÇÏ¹Ç·Î Èü¸Þ¸ð¸®¿¡¼­ man2 ÀÇ name ÀÌ ÇØÁ¦ÇÒ ¸Þ¸ð¸®¸¦ ÂüÁ¶ÇÒ ¼ö ¾ø°Ô µÇ¾î¹ö·È´Ù.
+	man2 = man1;  // ì–•ì€ ë³µì‚¬ë¥¼ ìˆ˜í–‰í•˜ë¯€ë¡œ íž™ë©”ëª¨ë¦¬ì—ì„œ man2 ì˜ name ì´ í•´ì œí•  ë©”ëª¨ë¦¬ë¥¼ ì°¸ì¡°í•  ìˆ˜ ì—†ê²Œ ë˜ì–´ë²„ë ¸ë‹¤.
 
 	man1.ShowPersonInfo();
 	man2.ShowPersonInfo();

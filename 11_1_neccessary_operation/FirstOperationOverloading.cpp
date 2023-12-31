@@ -35,7 +35,7 @@ public:
 		std::cout << num3 << ", " << num4 << std::endl;
 	}
 
-	Second& operator=(const Second& ref)  // ´ëÀÔ¿¬»êÀÚ ¿À¹ö·Îµù
+	Second& operator=(const Second& ref)  // ëŒ€ì…ì—°ì‚°ì ì˜¤ë²„ë¡œë”©
 	{
 		std::cout << "Second& operator=()" << std::endl;
 		num3 = ref.num3;
@@ -52,8 +52,8 @@ int main(void)
 	Second ssrc(333, 444);
 	Second scpy;
 
-	fcpy = fsrc;  // fcpy.operator=(fsrc) µğÆúÆ® ´ëÀÔ¿¬»êÀÚ ¼öÇà
-	scpy = ssrc;  // sspy.operator=(Ssrc) ¿À¹ö·Îµù ´ëÀÔ¿¬»êÀÚ ¼öÇà
+	fcpy = fsrc;  // fcpy.operator=(fsrc) ë””í´íŠ¸ ëŒ€ì…ì—°ì‚°ì ìˆ˜í–‰
+	scpy = ssrc;  // sspy.operator=(Ssrc) ì˜¤ë²„ë¡œë”© ëŒ€ì…ì—°ì‚°ì ìˆ˜í–‰
 
 	fcpy.ShowData();
 	scpy.ShowData();
