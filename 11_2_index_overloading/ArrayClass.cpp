@@ -47,5 +47,12 @@ int main(void)
         std::cout << arr[i] << std::endl;
     }
 
+    BoundCheckIntArray cpy1(5);
+
+    // 배열은 '저장소'인데, 저장소는 유일성을 보장해야함으로 복사는 지양해야한다.
+    // 복사 생성자는 얕은 복사이므로 깊은 복사를 하게 되면 유일성을 보장 받지 못한다.
+    cpy1 = arr;                     // 위험
+    BoundCheckIntArray copy = arr;  // 위험
+
     return 0;
 }
